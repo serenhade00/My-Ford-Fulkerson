@@ -1,3 +1,6 @@
+---
+math: true
+---
 # 🚰 My-Ford-Fulkerson Algorithm 🚰
 
 
@@ -49,5 +52,6 @@
 ![first_img](https://latex.codecogs.com/png.latex?c%28u%2Cv%29)
 
 $x+1$
+$O(n)$
 
 
