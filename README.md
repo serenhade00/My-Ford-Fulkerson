@@ -1,6 +1,3 @@
----
-math: true
----
 # 🚰 My-Ford-Fulkerson Algorithm 🚰
 
 
@@ -29,10 +26,11 @@ math: true
 * *Maximum Flow*
 
 ### **Network Flow / Maximum Flow**
-***
 
 **정의:** 
 > 유량 그래프에서 <u>시작점으로 정의된 정점</u>에서 <u>도착점으로 정의된 정점</u>까지 최대 얼마만큼의 **유량(Flow)** 이 지나갈 수 있는지 구하는 문제
+
+ex) 출발점에서 물을 흘려보내 도착지점에 가장 많은 물을 흘려보낼 수 있는 경우의 결과값 도출
 
 * 유량 그래프의 특성:
     * 간선의 가중치가 정점에서 정점으로 보낼 수 있는 최대 유량을 의미하는 그래프
@@ -40,18 +38,20 @@ math: true
 
 **관련 용어:**
 
-* Source: 시작점
-* Sink: 도착점
-* Capacity: 용량 (간선에서 소화 가능한 최대 양 or 값)
-* Flow: 유량 (간선에서 용량을 점유하고 있는, 사용하고있는 양 or 값)
-* ![first_img](https://latex.codecogs.com/png.latex?c%28u%2Cv%29): 정점 a 에서 b로, 소화 가능한(남은) 용량 값
-* ![second_img](https://latex.codecogs.com/png.latex?f%28u%2Cv%29): 정점 a 에서 b로, 사용하고 있는(쓴) 유량 값
+| 값 | 의미 |
+|--- |---|
+| `Source` | 시작점 | 
+| `Sink` | 도착점 |  
+| `Capacity` | 용량 (간선에서 감당 가능한 최대 양) |  
+| `Flow` | 유량 (간선에서 용량을 점유하고 있는, 즉 이미 사용중인 양) |
+| `C(u, v)` | 정점 u 에서 v로, 현재 감당 가능한(남은) 용량 값 |  
+| `F(u, v)` | 정점 u 에서 v로, 이미 사용하고 있는(쓴) 유량 값 |    
 
-=> 출발점에서 물을 흘려보내 도착지점에 가장 많은 물을 흘려보낼 수 있는 경우의 결과값을
+**제약 조건:**
 
-![first_img](https://latex.codecogs.com/png.latex?c%28u%2Cv%29)
+1. Capacity constraints - 용량 제한
+- $f(u,v)≤c(u,v)$
 
-$x+1$
-$O(n)$
-
+2. Flow conservation
+3. Skew symmetry
 
