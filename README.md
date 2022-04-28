@@ -50,7 +50,8 @@ ex) 출발점에서 물을 흘려보내 도착지점에 가장 많은 물을 흘
 **제약 조건:**
 
 1. Capacity constraints - 용량 제한
-- $f(u,v)≤c(u,v)$
+- $f(u, v)<=c(u, v)$
+$x$
 
 2. Flow conservation
 3. Skew symmetry
